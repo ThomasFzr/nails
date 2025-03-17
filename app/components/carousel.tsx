@@ -1,17 +1,17 @@
 import { useState } from "react";
 
 const slides = [
-    "/images/designs/nailsdesings-1.jpg", 
-    "/images/designs/nailsdesings-2.jpg", 
-    "/images/designs/nailsdesings-3.jpg", 
-    "/images/designs/nailsdesings-4.jpg", 
-    "/images/designs/nailsdesings-5.jpg", 
-    "/images/designs/nailsdesings-6.jpg", 
-    "/images/designs/nailsdesings-7.jpg", 
-    "/images/designs/nailsdesings-8.jpg", 
-    "/images/designs/nailsdesings-9.jpg", 
-    "/images/designs/nailsdesings-10.jpg", 
-    "/images/designs/nailsdesings-11.jpg", 
+    "/images/designs/nailsdesings-1.jpg",
+    "/images/designs/nailsdesings-2.jpg",
+    "/images/designs/nailsdesings-3.jpg",
+    "/images/designs/nailsdesings-4.jpg",
+    "/images/designs/nailsdesings-5.jpg",
+    "/images/designs/nailsdesings-6.jpg",
+    "/images/designs/nailsdesings-7.jpg",
+    "/images/designs/nailsdesings-8.jpg",
+    "/images/designs/nailsdesings-9.jpg",
+    "/images/designs/nailsdesings-10.jpg",
+    "/images/designs/nailsdesings-11.jpg",
 ];
 
 export const Carousel = () => {
@@ -33,16 +33,18 @@ export const Carousel = () => {
                 const blur = Math.abs(offset) > 2 ? "blur-sm opacity-0" : "blur-none opacity-60";
 
                 return (
-                    <img
-                        key={index}
-                        src={slide}
-                        alt={`Slide ${index + 1}`}
-                        className={`absolute w-[300px] h-[300px] object-cover rounded-lg shadow-lg transition-transform duration-500 ease-in-out hover:scale-110 overflow-hidden ${blur}`}
-                        style={{
-                            transform: `translateX(${120 * offset}px) scale(${scale})`,
-                            zIndex: -Math.abs(offset),
-                        }}
-                    />
+                    <div className="overflow-hidden w-[300px]">
+                        <img
+                            key={index}
+                            src={slide}
+                            alt={`Slide ${index + 1}`}
+                            className={`absolute w-[300px] h-[300px] object-cover rounded-lg shadow-lg transition-transform duration-500 ease-in-out hover:scale-110 ${blur}`}
+                            style={{
+                                transform: `translateX(${120 * offset}px) scale(${scale})`,
+                                zIndex: -Math.abs(offset),
+                            }}
+                        />
+                    </div>
                 );
             })}
 
