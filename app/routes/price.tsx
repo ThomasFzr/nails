@@ -1,12 +1,10 @@
+import { Title } from "~/components/title";
+
 export default function PricePage() {
     return (
         <div className="w-full p-8 mt-16 flex flex-col justify-center">
 
-            <div className="flex flex-row items-center justify-around">
-                <span className="text-4xl font-bold">MES PRIX</span>
-                <img className="w-30" src="/images/price.jpg" alt="dispo" />
-            </div>
-
+            {Title({ name: "MES PRIX", imageSrc: "/images/price.jpg", imageAlt: "prix" })}
 
             <div className="flex flex-row justify-around pt-12 pb-12">
                 <div className="flex flex-col">
