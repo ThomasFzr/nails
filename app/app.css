@@ -2,7 +2,8 @@
 @import "tailwindcss";
 
 html, body {
-  @apply bg-[#260303] text-[#F5960B];
+  /* @apply bg-[#260303] text-[#F5960B]; */
+  @apply bg-[#4B0505] text-[#F5960B];
   font-family: "Permanent Marker", cursive;
   color: #F5960B;
 }
