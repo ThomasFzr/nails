@@ -11,7 +11,7 @@ export default function InfoPage() {
 
                 <div className="flex flex-col md:flex-row justify-around p-12">
 
-                    <div className="flex flex-col md:pr-48">
+                    <div className="flex flex-col md:pr-48 pb-12">
                         <h2 className="text-3xl">C'EST OK ✔</h2>
                         <br />
                         <span>
@@ -44,7 +44,7 @@ export default function InfoPage() {
                 </div>
 
 
-                <div className="flex flex-col justify-center items-center pt-8">
+                <div className="flex flex-col justify-center items-center pt-8 pb-20">
                     <span>
                         ON PEUT PARLER FRANÇAIS, ANGLAIS OU ESPAGNOL
                     </span> <br />

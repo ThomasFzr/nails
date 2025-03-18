@@ -49,7 +49,7 @@ export default function DispoPage() {
 
             </div>
 
-            <div className="flex flex-col items-center pt-4">
+            <div className="flex flex-col items-center pt-4 pb-20">
                 <span>            JE TE RÉPONDRAI
                 </span>
                 <span>

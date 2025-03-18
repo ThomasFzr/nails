@@ -52,7 +52,7 @@ export const Navbar = () => {
                     </Link>
                 </div>
 
-                <div className="flex-row justify-around w-[30%] hidden md:flex">
+                <div className="flex-row justify-around w-[30%] hidden md:flex ">
                     <Link to="/price" className="hover:scale-110">PRIX</Link>
                     <Link to="/dispo" className="hover:scale-110">DISPO</Link>
                     <Link to="/info" className="hover:scale-110">INFOS</Link>
