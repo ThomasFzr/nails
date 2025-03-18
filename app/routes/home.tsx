@@ -12,6 +12,7 @@ export function meta({ }: Route.MetaArgs) {
 export default function Home() {
   return <>
     <div className="w-full flex flex-col justify-center mt-16">
+      <h1 className="hidden">Ongles Lyon Gel X Aesthetic</h1>
       <Grid />
       {/* <Carousel /> */}
     </div>

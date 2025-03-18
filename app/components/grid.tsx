@@ -18,7 +18,7 @@ export const Grid = () => {
 
     return (
         <div>
-            <div className="grid grid-cols-3 gap-4 p-20">
+            <div className="grid grid-cols-3 gap-4 p-8 pt-20 md:p-20">
                 {images.map((image, index) => {
                     return (
                         <div className="overflow-hidden rounded-lg shadow-lg">

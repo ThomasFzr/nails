@@ -4,9 +4,9 @@ export default function PricePage() {
     return (
         <div className="w-full p-8 mt-16 flex flex-col justify-center">
 
-            {Title({ name: "MES PRIX", imageSrc: "/images/price.jpg", imageAlt: "prix" })}
+            {Title({ name: "PRIX", imageSrc: "/images/price.jpg", imageAlt: "prix" })}
 
-            <div className="flex flex-row justify-around pt-12 pb-12">
+            <div className="flex flex-col md:flex-row justify-around pt-12 pb-12">
                 <div className="flex flex-col">
                     <h2 className="text-3xl">Ongles Naturels</h2>
                     <br />
@@ -53,7 +53,7 @@ export default function PricePage() {
             </div>
 
 
-            <div className="flex flex-row items-center justify-around pt-24">
+            <div className="flex flex-col md:flex-row items-center justify-around pt-24">
                 <div className="flex flex-row items-center justify-around">
                     <img className="w-20" src="/images/price.jpg" alt="dispo" />
                     Espèces

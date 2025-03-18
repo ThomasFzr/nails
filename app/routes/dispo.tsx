@@ -21,8 +21,49 @@ const dispos = [
 export default function DispoPage() {
     return (
         <div className="w-full p-8 mt-16 flex flex-col justify-center">
-            {Title({ name: "MES DISPOS", imageSrc: "/images/dispo.jpg", imageAlt: "dispo" })}
+            {Title({ name: "DISPOS", imageSrc: "/images/dispo.jpg", imageAlt: "dispo" })}
             <Calendar events={dispos} />
+
+            <span className="w-full flex flex-col items-center text-3xl p-16">POUR PRENDRE RDV</span>
+            <div className="flex flex-col items-center">
+                <div className="flex flex-row items-center justify-around">
+                    <span className="pr-4">EN DM INSTA</span>
+                    <a href="https://www.instagram.com/lesgriffesduz/" target="_blank" rel="noopener noreferrer">
+                        <img className="w-8 hover:scale-110" src="/images/insta.png" alt="Instagram" />
+                    </a>
+                </div>
+                <span>
+                    TES INSPIS (ONGLES, IMAGES, DESSINS, PHOTOS BIJOUX, IDÉES...) 💅🏼
+                </span>
+                <span>
+                    SI TU COMPTES VENIR SEUL.E OU ACCOMPAGNÉ.E 🐆🐆
+                </span>
+                <span>
+                    LA DATE ET L'HEURE À LAQUELLE TU SOUHAITES ÊTRE
+                    PIMPÉ.E ⏱️
+                </span>
+                <span>
+                    UNE PHOTO DE TES ONGLES NATURELS OU DE TA POSE
+                    ACTUELLE EST APPRÉCIÉE MAIS PAS OBLIGATOIRE 📷
+                </span>
+
+            </div>
+
+            <div className="flex flex-col items-center pt-4">
+                <span>            JE TE RÉPONDRAI
+                </span>
+                <span>
+                    SI JE SUIS CAPABLE OU NON DE LE FAIRE (TOUT PROJET
+                    DEMANDE DU MATÉRIEL ET DES COMPÉTENCES)                </span>
+                <span>
+                    COMBIEN DE TEMPS DURERA LA PRESTATION
+                </span>
+                <span>
+                    LE PRIX DU PROJET
+                </span>
+            </div>
+
+
         </div>
     );
 }

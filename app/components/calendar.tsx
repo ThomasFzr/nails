@@ -28,7 +28,7 @@ const Calendar = ({ events = [] }: { events: Event[] }) => {
 
     return (
         <div className="p-4">
-            <h2 className="text-xl font-bold text-center mb-4">
+            <h2 className="text-3xl font-bold text-center mb-4">
                 {currentDate.toLocaleString("default", { month: "long" })} {year}
             </h2>
             <table className="w-full border-collapse border border-gray-300">

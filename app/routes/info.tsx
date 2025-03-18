@@ -9,9 +9,9 @@ export default function InfoPage() {
             <div className="flex flex-col items-center">
 
 
-                <div className="flex flex-row justify-around p-12">
+                <div className="flex flex-col md:flex-row justify-around p-12">
 
-                    <div className="flex flex-col pr-48">
+                    <div className="flex flex-col md:pr-48">
                         <h2 className="text-3xl">C'EST OK ✔</h2>
                         <br />
                         <span>
